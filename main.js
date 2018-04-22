@@ -1,10 +1,7 @@
 function getTime() {
     var teraz = new Date();
-    var wynik = "Youre Last Visit:" + teraz.getHours() + ":" + teraz.getMinutes();
-
-
+    var wynik = "Your Last Visit:" + teraz.getHours() + ":" + teraz.getMinutes() +":" + teraz.getSeconds() + "seconds";
     return wynik;
-
 }
 
 function infiniteLoop(callback) {
