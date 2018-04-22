@@ -1,0 +1,65 @@
+body {
+    background: #f6f6f6;
+    font-family: 'Roboto', sans-serif;
+
+    /*//zmieniam background strony kolorem na zasadzie 16tkowej */
+}
+
+main {
+    display: flex;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1850px;
+}
+aside{
+    background: #fff;
+    flex-direction: column;
+}
+a{
+    text-decoration: bisque;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.nav li{
+    padding: 20px 10px;
+    min-width: 150px;
+}
+
+.tile {
+    display: flex;
+    /*display flex jest to fajna opcja bo mamy mline (wyswietlane obok siebie )lub block <jeden obok 2giego>*/
+    flex-direction: column;
+    margin: 20px;
+    /*margin ustawia wszyskie marginesy (top bottom , left i right) jesli potem damy inny to nadpisujemy wartosc danego a reszta zostaje*/
+    width: 340px;
+    height: 450px;
+    padding: 40px;
+    background: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+
+}
+.nav li:hover {
+  background: brown;
+}
+.tile .tile-paragraph {
+    font-size: 28px;
+}
+
+.title-img {
+    display: block;
+    width: 200px;
+}
+
+.tile p, .tile h3 {
+    font-size: 24px;
+    font-style: italic;
+}
